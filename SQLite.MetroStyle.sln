@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.MetroStyle.DemoApp.Xaml", "SQLite.MetroStyle.DemoApp.Xaml\SQLite.MetroStyle.DemoApp.Xaml.csproj", "{BA8431E7-4A28-44C4-A29E-32BC97D9002E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDA2881D-18AF-4034-B173-8E7A74EAFA0B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|ARM.Build.0 = Debug|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Win32.ActiveCfg = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Win32.Build.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|Win32.Deploy.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x64.ActiveCfg = Debug|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x64.Build.0 = Debug|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x64.Deploy.0 = Debug|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x86.ActiveCfg = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x86.Build.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Debug|x86.Deploy.0 = Debug|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|ARM.ActiveCfg = Release|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|ARM.Build.0 = Release|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|ARM.Deploy.0 = Release|ARM
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Win32.ActiveCfg = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Win32.Build.0 = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|Win32.Deploy.0 = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x64.ActiveCfg = Release|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x64.Build.0 = Release|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x64.Deploy.0 = Release|x64
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x86.ActiveCfg = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x86.Build.0 = Release|x86
+		{BA8431E7-4A28-44C4-A29E-32BC97D9002E}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

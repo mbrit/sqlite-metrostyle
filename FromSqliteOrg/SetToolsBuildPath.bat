@@ -1,0 +1,1 @@
+set path=%path%;C:\Program Files (x86)\UnxUpdates;C:\Program Files (x86)\Fossill
