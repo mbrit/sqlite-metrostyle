@@ -1,1 +1,0 @@
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\SQLite.MetroStyle.DemoApp.Xaml2.csproj;x86
