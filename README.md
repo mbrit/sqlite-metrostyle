@@ -8,6 +8,8 @@ Original build instructions
 On May 18th 2012, @timheuer's posted instructions on how to grab the WinRT branch from SQLite.org and
 build a DLL that can be used with Metro-style apps.
 
+**You generally won't need to follow these steps - this project does all this work for you!**
+
 His original instructions are here: https://skydrive.live.com/view.aspx?resid=A737583042956228!1940&cid=a737583042956228.
 
 For convenience, these are his instructions:
