@@ -9,7 +9,6 @@ _Resharper*
 *.mdf
 *.ldf
 *.opensdf
-*.dll
 *.exe
 *.winmd
 *.exp
