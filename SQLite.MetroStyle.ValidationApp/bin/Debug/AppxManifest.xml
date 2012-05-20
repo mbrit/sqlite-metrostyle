@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="7e094fbe-a506-425b-ba83-7d16369c7db9" Publisher="CN=Matthew" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>SQLite.MetroStyle.ValidationApp</DisplayName>
+    <PublisherDisplayName>Matthew</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>SQLite.MetroStyle.ValidationApp</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="SQLite.MetroStyle.ValidationApp.exe" EntryPoint="SQLite.MetroStyle.ValidationApp.App">
+      <VisualElements DisplayName="SQLite.MetroStyle.ValidationApp" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="SQLite.MetroStyle.ValidationApp" ForegroundText="light" BackgroundColor="#222222">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

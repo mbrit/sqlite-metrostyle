@@ -17,6 +17,6 @@ _Resharper*
 *.pdb
 *.pri
 *.ipch
-*.fossill
+*.fossil
 SQLite.MetroStyle.DemoApp.Xaml/bin/
 SQLite.MetroStyle.DemoApp.Xaml/obj/

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>AMXVMBR2</Machine>
+    <WindowsUser>Matthew</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <Modified>2012-05-20T12:18:11.696</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\SQLite.MetroStyle.ValidationApp.exe">
+      <PackagePath>SQLite.MetroStyle.ValidationApp.exe</PackagePath>
+      <Modified>2012-05-20T12:18:11.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\SQLite.MetroStyle.ValidationApp.pdb">
+      <PackagePath>SQLite.MetroStyle.ValidationApp.pdb</PackagePath>
+      <Modified>2012-05-20T12:18:11.507</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2012-02-14T04:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <Modified>2012-02-14T04:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <Modified>2012-02-14T04:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <Modified>2012-02-14T04:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-02-14T04:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\BlankPage.xaml">
+      <PackagePath>BlankPage.xaml</PackagePath>
+      <Modified>2012-05-20T12:18:02.674</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-05-20T12:18:02.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-05-20T12:18:11.632</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

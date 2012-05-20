@@ -1,0 +1,1 @@
+C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\SQLite.MetroStyle.ValidationApp.csproj;neutral
