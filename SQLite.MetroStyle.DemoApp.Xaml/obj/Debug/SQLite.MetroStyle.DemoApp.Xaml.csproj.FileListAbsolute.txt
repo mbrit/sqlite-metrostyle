@@ -1,5 +1,0 @@
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\obj\Debug\App.g.i.cs
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\obj\Debug\App.g.cs
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\obj\Debug\BlankPage.g.i.cs
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\obj\Debug\BlankPage.g.cs
-C:\Code\sqlite-metrostyle\SQLite.MetroStyle.DemoApp.Xaml\obj\Debug\XamlTypeInfo.g.cs

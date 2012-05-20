@@ -19,3 +19,4 @@ _Resharper*
 *.ipch
 *.fossill
 SQLite.MetroStyle.DemoApp.Xaml/bin/
+SQLite.MetroStyle.DemoApp.Xaml/obj/
