@@ -9,6 +9,11 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundBrush}">
 
+        <StackPanel>
+            <TextBlock Text="SQLite Validation App"></TextBlock>
+            <Button x:ConnectionId='1' Content="Create Table"                          ></Button>
+        </StackPanel>
+        
     </Grid>
 </Page>
 

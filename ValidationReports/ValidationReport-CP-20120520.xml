@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="FAIL" VERSION="2.0.8229" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="Metro" CONFIG_CHANGED="TRUE" OSVERSION="6.2.8250.0" OS="Microsoft Windows 8 Consumer Preview" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="20/05/2012 13:28:02" ID="fcdc98d42edcba7488e4d9ee394196b9">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean, reversible, installation" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders by default" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally sign files and drivers" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 versions of Windows" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="Do not block installation or application launch based on OS version check" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="Follow User Account Control (UAC) guidelines" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to Restart Manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Do not load Services and Drivers in Safe Mode" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Support multiuser sessions" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Eliminate Application Failures" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="47" NAME="The App should launch successfully." DESCRIPTION="The App should launch successfully." EXECUTIONTIME="00h:00m:12s.33ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Do not install executables that crash or hang during the testing process" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:06s.27ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Do not depend on Windows compatibility fixes" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Metro style App Test Failure" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="31" NAME="Metro style App manifest must include valid entries for all required fields" DESCRIPTION="Metro style App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.60ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Do not disable Windows security features" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Opt into Windows security features" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary Analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.03ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Use of Supported Platform APIs" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Metro style Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Metro style App must only use supported platform APIs." EXECUTIONTIME="00h:00m:04s.03ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Launch time performance" RATIONALE="The application should have a fast and responsive launch experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
+      <TEST INDEX="43" NAME="Performance Launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:05m:26s.47ms">
+        <RESULT><![CDATA[WARNING]]></RESULT>
+        <MESSAGES>
+          <MESSAGE TEXT="Application App has a launch time of 0.957 secs." />
+          <MESSAGE TEXT="Application App has CPU utilization of 10.3 percent.  CPU utilization of 50 percent or higher can significantly degrade performance for Application Launch/Suspend." />
+          <MESSAGE TEXT="Application App allocates process private memory of 0 MB.  Process private memory usage of greater than 25 MB can significantly degrade performance for Application Launch/Suspend." />
+          <MESSAGE TEXT="Application App issues File I/O of  0.084 MB.  Issuing File I/O of 50 MB or higher can significantly degrade performance for Application Launch/Suspend." />
+        </MESSAGES>
+        <Observed_Values>
+          <App ID="App">
+            <Attribute Name="LaunchTimeUsec">957406</Attribute>
+            <Attribute Name="LaunchTimeMaxUSec">5000000</Attribute>
+            <Attribute Name="CpuPercentage">10.3</Attribute>
+            <Attribute Name="CpuPercentageMax">50</Attribute>
+            <Attribute Name="FileIOBytes">88175</Attribute>
+            <Attribute Name="FileIOMaxBytes">52428800</Attribute>
+            <Attribute Name="PrivatePagesBytes">0</Attribute>
+            <Attribute Name="PrivatePagesMaxBytes">26214400</Attribute>
+          </App>
+        </Observed_Values>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="18" TITLE="Suspend performance" RATIONALE="The application should have a fast and responsive suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) and making sure that resources are released in a performant manner.">
+      <TEST INDEX="44" NAME="Performance Suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:11m:21s.92ms">
+        <RESULT><![CDATA[FAIL]]></RESULT>
+        <MESSAGES>
+          <MESSAGE TEXT="Infrastructure Error: Failure occurred while processing application App.  Please consider re-running the test and avoid interacting with the application while tests are running." />
+          <MESSAGE TEXT="Exception:  Infrastructure Error: Timeout occurred during testing while running C:\Program Files\Windows Kits\8.0\App Certification Kit\..\Windows Performance Toolkit\xperf.exe.  Please consider re-running the test and  avoid interacting with the application while tests are running." />
+        </MESSAGES>
+        <Observed_Values />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="Test Appx Manifest Resources" RATIONALE="The Appx Package Manifest should have valid resources defined in the resources.pri file, as per the Appx Packaging Specification and Appx Manifest Schema.">
+      <TEST INDEX="45" NAME="Appx Manifest Resources Validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:01s.13ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug App Check" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="The App should not install any debug binaries." DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.57ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="7e094fbe-a506-425b-ba83-7d16369c7db9" Type="Application" Source="AppxPackage" Publisher="CN=Matthew" Version="1.0.0.0" Language="1033" OnSystemDrive="true" RootDirPath="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\AppX" PathEvidenceId="0x11eb" RNP="0x1" DNP="0xd" EvidenceId="0x11eb" Id="0000b11a43c83093e144a312b1d00d8dba9b00000904">
+        <Indicators>
+          <PackageManifestIndicator>
+            <PackageManifest PackageFullName="7e094fbe-a506-425b-ba83-7d16369c7db9_1.0.0.0_neutral__fv7d1kf84c3t4" />
+          </PackageManifestIndicator>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" />
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis Id="7e094fbe-a506-425b-ba83-7d16369c7db9_1.0.0.0_neutral__fv7d1kf84c3t4" Type="Package" ProgramId="0000b11a43c83093e144a312b1d00d8dba9b00000904" MetroDictionaryVersion="1.09" MetroAnalysisVersion="1.0" StaticAnalysisErrorCode="0" DictionaryVersion="1.1" AnalysisVersion="1.1">
+      <AitFile Id="00000514a721d6748d6fcd39dddf25a472824c37ea31" Name="SQLite.MetroStyle.ValidationApp.exe" MetroErrorCode="0" ErrorCode="0">
+        <AitCategory Id="WRTClassDotNet">
+          <AitFeature Name="Windows.Foundation.Collections.IObservableMap`2" />
+          <AitFeature Name="Windows.Foundation.TypedEventHandler`2" />
+          <AitFeature Name="Windows.UI.Xaml.WindowSizeChangedEventHandler" />
+          <AitFeature Name="Windows.Foundation.Collections.CollectionChange" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlock" />
+          <AitFeature Name="Windows.UI.Xaml.DataTemplate" />
+          <AitFeature Name="Windows.UI.Xaml.DependencyProperty" />
+          <AitFeature Name="Windows.Foundation.Size" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlockOverflow" />
+          <AitFeature Name="Windows.Foundation.Rect" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Primitives.ButtonBase" />
+          <AitFeature Name="Windows.UI.Xaml.RoutedEventHandler" />
+          <AitFeature Name="Windows.UI.Xaml.ApplicationInitializationCallback" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IXamlType" />
+          <AitFeature Name="Windows.UI.Xaml.Markup.IXamlMember" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+        </AitCategory>
+        <AitCategory Id="WRTInterfaceDotNet">
+          <AitFeature Name="Windows.UI.Xaml.Visibility" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Control" />
+        </AitCategory>
+        <AitCategory Id="WRTMethodDotNet">
+          <AitFeature Name="Windows.UI.Xaml.Controls.Page.get_Frame" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame.GoBack" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame.get_CanGoBack" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView.GetForCurrentView" />
+          <AitFeature Name="Windows.UI.Xaml.Window.get_Current" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView.get_Value" />
+          <AitFeature Name="Windows.UI.Xaml.VisualStateManager.GoToState" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationViewStateChangedEventArgs.get_ViewState" />
+          <AitFeature Name="Windows.UI.Xaml.Window.get_Bounds" />
+          <AitFeature Name="Windows.Foundation.Rect.get_Width" />
+          <AitFeature Name="Windows.Foundation.Collections.MapChangedEventHandler`2.Invoke" />
+          <AitFeature Name="Windows.UI.Xaml.DependencyObject.GetValue" />
+          <AitFeature Name="Windows.UI.Xaml.DependencyObject.SetValue" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Panel.get_Children" />
+          <AitFeature Name="Windows.UI.Xaml.UIElement.InvalidateMeasure" />
+          <AitFeature Name="Windows.UI.Xaml.UIElement.Measure" />
+          <AitFeature Name="Windows.UI.Xaml.UIElement.get_DesiredSize" />
+          <AitFeature Name="Windows.Foundation.Size.get_Width" />
+          <AitFeature Name="Windows.Foundation.Size.get_Height" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlock.get_HasOverflowContent" />
+          <AitFeature Name="Windows.UI.Xaml.DataTemplate.LoadContent" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlock.put_OverflowContentTarget" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlockOverflow.put_OverflowContentTarget" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.RichTextBlockOverflow.get_HasOverflowContent" />
+          <AitFeature Name="Windows.UI.Xaml.UIElement.Arrange" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.LaunchActivatedEventArgs.get_PreviousExecutionState" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame.Navigate" />
+          <AitFeature Name="Windows.UI.Xaml.Window.put_Content" />
+          <AitFeature Name="Windows.UI.Xaml.Window.Activate" />
+          <AitFeature Name="Windows.UI.Xaml.Application.LoadComponent" />
+          <AitFeature Name="Windows.UI.Xaml.Application.Start" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog.ShowAsync" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+      </AitFile>
+      <AitFile Id="0000b6ea772ce494dec26dee3f5af14e0fdbcc689126" Name="sqlite3.dll" MetroErrorCode="0" ErrorCode="0">
+        <AitCategory Id="ApiDynamic">
+          <AitFeature Name="kernel32.dll!AreFileApisANSI" />
+          <AitFeature Name="kernel32.dll!CreateFileA" />
+          <AitFeature Name="kernel32.dll!CreateFileW" />
+          <AitFeature Name="kernel32.dll!CreateMutexW" />
+          <AitFeature Name="kernel32.dll!DeleteFileA" />
+          <AitFeature Name="kernel32.dll!FileTimeToLocalFileTime" />
+          <AitFeature Name="kernel32.dll!FileTimeToSystemTime" />
+          <AitFeature Name="kernel32.dll!FormatMessageA" />
+          <AitFeature Name="kernel32.dll!GetDiskFreeSpaceA" />
+          <AitFeature Name="kernel32.dll!GetDiskFreeSpaceW" />
+          <AitFeature Name="kernel32.dll!GetFileAttributesA" />
+          <AitFeature Name="kernel32.dll!GetFileAttributesW" />
+          <AitFeature Name="kernel32.dll!GetFileSize" />
+          <AitFeature Name="kernel32.dll!GetFullPathNameA" />
+          <AitFeature Name="kernel32.dll!GetFullPathNameW" />
+          <AitFeature Name="kernel32.dll!GetSystemInfo" />
+          <AitFeature Name="kernel32.dll!GetTempPathA" />
+          <AitFeature Name="kernel32.dll!GetTempPathW" />
+          <AitFeature Name="kernel32.dll!GetTickCount" />
+          <AitFeature Name="kernel32.dll!GetVersionExA" />
+          <AitFeature Name="kernel32.dll!HeapCreate" />
+          <AitFeature Name="kernel32.dll!HeapDestroy" />
+          <AitFeature Name="kernel32.dll!HeapValidate" />
+          <AitFeature Name="kernel32.dll!LoadLibraryA" />
+          <AitFeature Name="kernel32.dll!LoadLibraryW" />
+          <AitFeature Name="kernel32.dll!LocalFree" />
+          <AitFeature Name="kernel32.dll!LockFile" />
+          <AitFeature Name="kernel32.dll!MapViewOfFile" />
+          <AitFeature Name="kernel32.dll!OutputDebugStringA" />
+          <AitFeature Name="kernel32.dll!SetFilePointer" />
+          <AitFeature Name="kernel32.dll!Sleep" />
+          <AitFeature Name="kernel32.dll!UnlockFile" />
+          <AitFeature Name="kernel32.dll!WaitForSingleObject" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="kernel32.dll!CloseHandle" />
+          <AitFeature Name="kernel32.dll!CreateEventExW" />
+          <AitFeature Name="kernel32.dll!CreateFile2" />
+          <AitFeature Name="kernel32.dll!CreateFileMappingW" />
+          <AitFeature Name="kernel32.dll!DecodePointer" />
+          <AitFeature Name="kernel32.dll!DeleteCriticalSection" />
+          <AitFeature Name="kernel32.dll!DeleteFileW" />
+          <AitFeature Name="kernel32.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="kernel32.dll!EncodePointer" />
+          <AitFeature Name="kernel32.dll!EnterCriticalSection" />
+          <AitFeature Name="kernel32.dll!FlushFileBuffers" />
+          <AitFeature Name="kernel32.dll!FormatMessageW" />
+          <AitFeature Name="kernel32.dll!FreeLibrary" />
+          <AitFeature Name="kernel32.dll!GetCurrentProcessId" />
+          <AitFeature Name="kernel32.dll!GetCurrentThreadId" />
+          <AitFeature Name="kernel32.dll!GetFileAttributesExW" />
+          <AitFeature Name="kernel32.dll!GetFileInformationByHandleEx" />
+          <AitFeature Name="kernel32.dll!GetLastError" />
+          <AitFeature Name="kernel32.dll!GetNativeSystemInfo" />
+          <AitFeature Name="kernel32.dll!GetProcAddress" />
+          <AitFeature Name="kernel32.dll!GetProcessHeap" />
+          <AitFeature Name="kernel32.dll!GetSystemTime" />
+          <AitFeature Name="kernel32.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="kernel32.dll!GetTickCount64" />
+          <AitFeature Name="kernel32.dll!HeapAlloc" />
+          <AitFeature Name="kernel32.dll!HeapFree" />
+          <AitFeature Name="kernel32.dll!HeapReAlloc" />
+          <AitFeature Name="kernel32.dll!HeapSize" />
+          <AitFeature Name="kernel32.dll!InitializeCriticalSectionEx" />
+          <AitFeature Name="kernel32.dll!InterlockedCompareExchange" />
+          <AitFeature Name="kernel32.dll!IsDebuggerPresent" />
+          <AitFeature Name="kernel32.dll!IsProcessorFeaturePresent" />
+          <AitFeature Name="kernel32.dll!LeaveCriticalSection" />
+          <AitFeature Name="kernel32.dll!LoadPackagedLibrary" />
+          <AitFeature Name="kernel32.dll!LockFileEx" />
+          <AitFeature Name="kernel32.dll!MapViewOfFileEx" />
+          <AitFeature Name="kernel32.dll!MultiByteToWideChar" />
+          <AitFeature Name="kernel32.dll!OutputDebugStringW" />
+          <AitFeature Name="kernel32.dll!QueryPerformanceCounter" />
+          <AitFeature Name="kernel32.dll!ReadFile" />
+          <AitFeature Name="kernel32.dll!SetEndOfFile" />
+          <AitFeature Name="kernel32.dll!SetFilePointerEx" />
+          <AitFeature Name="kernel32.dll!SystemTimeToFileTime" />
+          <AitFeature Name="kernel32.dll!UnlockFileEx" />
+          <AitFeature Name="kernel32.dll!UnmapViewOfFile" />
+          <AitFeature Name="kernel32.dll!WaitForSingleObjectEx" />
+          <AitFeature Name="kernel32.dll!WideCharToMultiByte" />
+          <AitFeature Name="kernel32.dll!WriteFile" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

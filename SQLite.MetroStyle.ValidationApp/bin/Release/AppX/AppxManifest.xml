@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="SQLite.MetroStyle.ValidationApp.exe" EntryPoint="SQLite.MetroStyle.ValidationApp.App">
-      <VisualElements DisplayName="SQLite.MetroStyle.ValidationApp" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="SQLite.MetroStyle.ValidationApp" ForegroundText="light" BackgroundColor="#222222">
+      <VisualElements DisplayName="SQLite.MetroStyle.ValidationApp" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Validation application for confirming store acceptance of sqlite-net and WinRT branch of sqlite3.dll." ForegroundText="light" BackgroundColor="#222222">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>

@@ -1,7 +1,42 @@
-sqlite-metrostyle
-=================
+sqlite-metrostyle - Build of sqlite3 library validated against the Windows App Certificaiton Kit
+===
+The objective of this project is to create a sqlite3.dll that WinRT/Metro-style developers can use with confidence.
 
-C++/CX implementation of SQLite. Kept up-to-date with latest SQLite drop.
+Microsoft have given their commitment to having SQLite work property in Metro-style apps, and the SQLite team
+now support a `SQLITE_OS_WINRT` preprocessor directive within their main code branch. This project takes the
+"amalgamated" sqlite3.c file and compiles the project with that preprocessor directive switched on. We then
+take that DLL and use it within a normal C#/XAML Metro-style app whereupon we run the app through the 
+Windows App Certification Kit. We use the [https://github.com/praeclarum/sqlite-net sqlite-net] driver within the
+project to call SQLite - this being the recommended route.
+
+You will generally *not* need to clone or download this repo to use it. Follow the instructions below.
+
+To use SQLite in your C#/XAML project
+===
+Follow these steps:
+
+* Create a new project
+* From this repo, download the `~/bin/sqlite3.dll`. Save it somewhere on your machine.
+* In the new project, right-click the project and select **Add Existing Item**. Find the sqlite3.dll and select it. You do *not* need to
+add a reference to ths project. This may seem counterintuituve, but sqlite3.dll is not a WinRT component and hence isn't 
+"referenced" in the usual way. The application packaging process will find any project items marked as **Content** and deploy
+them with the app.
+* Follow the instructions on sqlite-net about getting started. This will usually involve copying source code files into your project.
+sqlite-net also isn't "referenced" into your project from an assembly - it's compiled in.
+
+Once you've done that, you should be able to reference SQLite.
+
+Marketplace validation
+===
+As mentioned above, we validate the DLL and the sqlite-net library ourselves before we commit into this repo. Here are
+the runs that we have done:
+
+* sqlite3.dll, v3.7.12, 2012-05-20 - Consumer Preview, PASS with Launch and Suspend warnings (see notes)
+
+If you're reproducing these tests you should note that validation always fails unless you are building in Release mode.
+
+We're seeing "launch" and "suspend" warnings with the Consumer Preview whatever apps we run, hence we're assuming
+that this problem will be ironed out closer to release. 
 
 Original build instructions
 ===

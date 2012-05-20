@@ -34,6 +34,16 @@ namespace SQLite.MetroStyle.ValidationApp
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private async void ShowAlert(string message)
+        {
+            MessageDialog dialog = new MessageDialog(message);
+            await dialog.ShowAsync();
+        }
+
+        private void HandleCreateTable(object sender, RoutedEventArgs e)
+        {
             using (var conn = new SQLiteConnection("foobar.db"))
             {
                 conn.CreateTable<Customer>();
@@ -41,12 +51,6 @@ namespace SQLite.MetroStyle.ValidationApp
                 // show...
                 ShowAlert("Table created.");
             }
-        }
-
-        private async void ShowAlert(string message)
-        {
-            MessageDialog dialog = new MessageDialog(message);
-            await dialog.ShowAsync();
         }
     }
 }

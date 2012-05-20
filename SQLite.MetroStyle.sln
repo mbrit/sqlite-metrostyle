@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDA2881D-18AF-4034-B173-8E7A74EAFA0B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.MetroStyle.ValidationApp", "SQLite.MetroStyle.ValidationApp\SQLite.MetroStyle.ValidationApp.csproj", "{15A37476-6C7C-4D57-90D8-7670DB444CBC}"

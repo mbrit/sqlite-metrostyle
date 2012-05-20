@@ -9,17 +9,17 @@
   <ItemGroup>
     <AppXManifest Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2012-05-20T12:27:49.820</Modified>
+      <Modified>2012-05-20T12:54:48.497</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\SQLite.MetroStyle.ValidationApp.exe">
       <PackagePath>SQLite.MetroStyle.ValidationApp.exe</PackagePath>
-      <Modified>2012-05-20T12:27:49.618</Modified>
+      <Modified>2012-05-20T13:06:53.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\SQLite.MetroStyle.ValidationApp.pdb">
       <PackagePath>SQLite.MetroStyle.ValidationApp.pdb</PackagePath>
-      <Modified>2012-05-20T12:27:49.589</Modified>
+      <Modified>2012-05-20T13:06:53.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -47,7 +47,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\BlankPage.xaml">
       <PackagePath>BlankPage.xaml</PackagePath>
-      <Modified>2012-05-20T12:18:02.674</Modified>
+      <Modified>2012-05-20T12:56:33.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\App.xaml">
       <PackagePath>App.xaml</PackagePath>
@@ -55,7 +55,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code\sqlite-metrostyle\SQLite.MetroStyle.ValidationApp\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-05-20T12:27:49.755</Modified>
+      <Modified>2012-05-20T12:54:48.389</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
