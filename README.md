@@ -2,12 +2,15 @@ sqlite-metrostyle - Build of sqlite3 library validated against the Windows App C
 ===
 The objective of this project is to create a sqlite3.dll that WinRT/Metro-style developers can use with confidence.
 
-Microsoft have given their commitment to having SQLite work property in Metro-style apps, and the SQLite team
-now support a `SQLITE_OS_WINRT` preprocessor directive within their main code branch. This project takes the
+SQLite.org have given their commitment to having SQLite work property in Metro-style apps. The code now contains
+a `SQLITE_OS_WINRT` preprocessor directive within their main code branch. This project takes the
 "amalgamated" sqlite3.c file and compiles the project with that preprocessor directive switched on. We then
 take that DLL and use it within a normal C#/XAML Metro-style app whereupon we run the app through the 
 Windows App Certification Kit. We use the [https://github.com/praeclarum/sqlite-net sqlite-net] driver within the
 project to call SQLite - this being the recommended route.
+
+You should note that this code uses a branch of the main SQLite source tree. SQLite.org typically only regards the
+main branch as being officially supported.
 
 You will generally *not* need to clone or download this repo to use it. Follow the instructions below.
 
@@ -29,7 +32,8 @@ Once you've done that, you should be able to reference SQLite.
 Marketplace validation
 ===
 As mentioned above, we validate the DLL and the sqlite-net library ourselves before we commit into this repo. Here are
-the runs that we have done:
+the runs that we have done. Validation reports are stored in the `~/ValidationReports` folder. Git tags are created for each committed 
+run.
 
 * sqlite3.dll, v3.7.12, 2012-05-20 - Consumer Preview, PASS with Launch and Suspend warnings (see notes)
 
